@@ -22,3 +22,20 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.") 
+
+print("You find yourself on a path through the woods. You reach a fork in the road.")
+choice1 = input("Do you go left, right, or straight? ")
+if choice1 == "left":
+    print("You come upon a small dark house. It is dark inside. Suddenly you hear a growl, right before you are eaten by a grue. Game Over. ")
+elif choice1 == "right":
+    choice3 = input("You come upon a lake. Do you attempt to swim, take the ferry across, or follow the path? ")
+    if choice3 == "swim":
+        print("The water is exceptionally cold and murky. Suddenly, the jaws of the lake monster clamp around you. Game Over.")
+    elif choice3 == "ferry":
+        choice4 = input("You take the ferry across the lake. On the other shore you see a path forward or to the left. Which way? ")
+        if choice4 == "forward":
+            print("You enter a clearing. In front of you is a hoard of glittering treasure. You WIN!")
+        elif choice4 == "left":
+            print("You enter a small clearing. You hear rustling in the bushes and growling before a giant bear rips you to shreds. Game Over.")
+elif choice1 == "straight":
+    print("You enter a small clearing. You hear rustling in the bushes and growling before a giant bear rips you to shreds. Game Over.")
